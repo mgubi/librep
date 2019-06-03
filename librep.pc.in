@@ -1,0 +1,15 @@
+version=@version@
+host_type=@host@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+repexecdir=@repexecdir@
+repcommonexecdir=@repcommonexecdir@
+includedir=@includedir@/rep/
+
+Cflags: -I${includedir}/ -I${repcommonexecdir}/
+Libs: -L@libdir@ -lrep -lcrypt -lgmp -lm
+
+Name: librep
+Description: librep - a lisp dialect
+Version: @version@
